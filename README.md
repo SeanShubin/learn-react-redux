@@ -1,17 +1,18 @@
 # Learn React Redux Application
 
 ## How this project was created
-
-- `npm init react-app my-app`
-- `cd my-app`
-- `printf "/node_modules/\n/.cache/\n/.idea/\n/dist/\n" > .gitignore`
-- `git init`
-- `git add --all`
-- `git commit -m "created learn-react-redux"`
-- `npm install parcel-bundler --save-dev`
-- `npm install ramda`
-- `npm install redux`
-- `npm install react-redux`
+```bash
+npm init react-app learn-react-redux
+cd learn-react-redux
+printf "/node_modules/\n/.cache/\n/.idea/\n/dist/\n" > .gitignore
+git init
+git add --all
+git commit -m "created learn-react-redux"
+npm install parcel-bundler --save-dev
+npm install ramda
+npm install redux
+npm install react-redux
+```
 
 ## How to run
 - react sample
@@ -34,14 +35,18 @@
 When you stringify an object, entries the library can't stringify are omitted.
 For debugging, stringify the keys as well, like so:
 
-`const stringifyObject = (object) => JSON.stringify({keys:Object.keys(object), object});`
+```javascript
+const stringifyObject = (object) => JSON.stringify({keys:Object.keys(object), object});
+```
 
 
 ### Get used to javascript destructuring
 
 Lets say we have the following value
 
-`const todoItem = { id:1, name: 'do something', completed:false }`
+```javascript
+const todoItem = { id:1, name: 'do something', completed:false }
+```
 
 We can pull out individual values like this
 
@@ -53,15 +58,23 @@ const completed = todoItem.completed;
 
 Or we can do the same thing with destructuring
 
-`const {id, name, completed} = todoItem`
+```javascript
+const {id, name, completed} = todoItem
+```
 
 If we are only interested in some of the values, we can omit the ones we don't need
 
-`const {name} = todoItem`
+```javascript
+const {name} = todoItem
+```
 
 We can destructure right from the parameter list, the following are identical
-- `const myFunction = (props) => console.log(props.name);`
-- `const myFunction = ({name}) => console.log(name);`
+```javascript
+const myFunction = (props) => console.log(props.name);
+```
+```javascript
+const myFunction = ({name}) => console.log(name);
+```
 
 When creating an object, there is a shorthand for when the variable name and field name are the same.
 For example, as an alternative to this:
