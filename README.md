@@ -19,6 +19,8 @@ npm install react-redux
     - `./run-react-example.sh`
 - react and state example
     - `./run-react-and-state-example.sh`
+- react and reducer example
+    - `./run-react-and-reducer-example.sh`
 
 ## Understand the types of react components
 - dimension 1
