@@ -4,7 +4,7 @@
 ```bash
 npm init react-app learn-react-redux
 cd learn-react-redux
-printf "/node_modules/\n/.cache/\n/.idea/\n/dist/\n" > .gitignore
+printf "/node_modules/\n/.cache/\n/.idea/\n/dist/\n.DS_Store\n" > .gitignore
 git init
 git add --all
 git commit -m "created learn-react-redux"
