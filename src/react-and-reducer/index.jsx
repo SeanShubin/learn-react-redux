@@ -1,4 +1,4 @@
-import React from 'react';
+import React, {useReducer} from 'react';
 import ReactDOM from 'react-dom';
 import * as R from 'ramda';
 
@@ -136,11 +136,11 @@ const TodoClearCompleted = (props) => {
 };
 
 const Index = (props) => {
-    let [state, dispatch] = React.useReducer(reducer, initialState);
+    let [state, dispatch] = useReducer(reducer, initialState);
     const handleEvent = (event) => {
         console.log('state (before)', state);
         console.log('event', event);
-        dispatch(state, event);
+        dispatch(event);
         console.log('state (after)', state);
     };
     const todoItemCreateEvent = ({name}) => {
