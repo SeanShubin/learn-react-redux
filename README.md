@@ -17,13 +17,14 @@ npm install react-redux
 ## How to run
 - react sample
     - `./run-react-example.sh`
-- react and state example
+- react and reducer example
+    - `./run-react-and-reducer-example.sh`
+- (deprecated, use react and reducer example instead) react and state example
     - `./run-react-and-state-example.sh`
 - reducer counter example
     - `./run-counter-example.sh`
-- react and reducer example
-    - `./run-react-and-reducer-example.sh`
-
+- (not working yet) fetch example
+    - `./run-fetch-example.sh`
 ## Understand the types of react components
 - dimension 1
     - Controlled Component
